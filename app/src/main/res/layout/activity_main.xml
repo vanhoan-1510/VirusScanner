@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:paddingTop="50dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/protect"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Malware Checker"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#1E1860"
+        ></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnStart"
+        android:layout_width="320dp"
+        android:layout_height="73dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#99e5b3"
+        android:layout_marginTop="150dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#1E1860"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_navigate_next_24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+</LinearLayout>
