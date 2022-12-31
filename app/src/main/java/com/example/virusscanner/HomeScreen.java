@@ -9,7 +9,7 @@ import android.view.View;
 
 public class HomeScreen extends AppCompatActivity implements View.OnClickListener {
 
-    private CardView scan, hash;
+    private CardView scan, hash, info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +18,11 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
 
         scan = (CardView) findViewById(R.id.scanCard);
         hash = (CardView) findViewById(R.id.hashCard);
+        info = (CardView) findViewById(R.id.showInfoCard);
 
         scan.setOnClickListener((View.OnClickListener) this);
         hash.setOnClickListener((View.OnClickListener) this);
+        info.setOnClickListener((View.OnClickListener) this);
     }
 
 
@@ -31,6 +33,7 @@ public class HomeScreen extends AppCompatActivity implements View.OnClickListene
         switch (view.getId()){
             case R.id.scanCard: intent = new Intent(this, ScannerScreen.class); startActivity(intent); break;
             case R.id.hashCard: intent = new Intent(this, GetHashCode.class); startActivity(intent); break;
+            case R.id.showInfoCard: intent = new Intent(this, DeviceInfo.class); startActivity(intent); break;
         }
     }
 }

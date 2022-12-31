@@ -63,8 +63,10 @@
         android:id="@+id/btnGenerate"
         android:layout_width="350dp"
         android:layout_height="70dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
         android:onClick="GenerateStringToHash"
-        app:cardBackgroundColor="#018da5"
+        app:cardBackgroundColor="#f4c4c6"
         app:cardCornerRadius="10dp"
         android:layout_marginTop="30dp">
 

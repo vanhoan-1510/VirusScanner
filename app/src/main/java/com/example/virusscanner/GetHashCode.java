@@ -41,10 +41,10 @@ public class GetHashCode extends AppCompatActivity {
         try {
 
             //create MD5 hash
-            MessageDigest digest = java.security.MessageDigest.getInstance(MD5);
+            final MessageDigest digest = java.security.MessageDigest.getInstance(MD5);
             digest.update(toString.getBytes());
 
-            byte messageDigest[] = digest.digest();
+            final byte messageDigest[] = digest.digest();
 
             //create hex string
             StringBuilder hexString = new StringBuilder();

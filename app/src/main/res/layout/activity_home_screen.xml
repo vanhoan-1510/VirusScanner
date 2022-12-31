@@ -55,6 +55,8 @@
             android:id="@+id/scanCard"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
             android:layout_marginTop="50dp"
             app:cardBackgroundColor="#FFE99D"
             app:cardCornerRadius="10dp">
@@ -90,6 +92,8 @@
             android:id="@+id/hashCard"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
             android:layout_marginTop="50dp"
             app:cardBackgroundColor="#B7D8FC"
             app:cardCornerRadius="10dp">
@@ -122,8 +126,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/showInfoCard"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
             android:layout_marginTop="50dp"
             app:cardBackgroundColor="#DFDFDF"
             android:layout_marginBottom="50dp"
