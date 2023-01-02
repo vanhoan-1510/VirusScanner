@@ -16,6 +16,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        pickFirst "META-INF/io.netty.versions.properties"
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -36,8 +41,16 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
-    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
 
     // csv reader
-    implementation 'com.opencsv:opencsv:4.6'
+    implementation 'com.opencsv:opencsv:5.7.1'
+//
+//    implementation 'com.loopj.android:android-async-http:1.4.11'
+
+    // https://mvnrepository.com/artifact/org.asynchttpclient/async-http-client
+//    implementation 'org.asynchttpclient:async-http-client:2.12.3'
+
+//    implementation 'com.github.Noddy20:ViScanner:1.0'
+//    implementation group: 'com.github.vatbub', name: 'virustotal-maven-plugin', version: '1.1'
 }

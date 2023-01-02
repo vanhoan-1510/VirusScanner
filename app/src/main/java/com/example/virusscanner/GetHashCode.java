@@ -3,6 +3,7 @@ package com.example.virusscanner;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -35,6 +36,7 @@ public class GetHashCode extends AppCompatActivity {
 
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private String getMdHash(String toString){
         String MD5 = "MD5";
 
