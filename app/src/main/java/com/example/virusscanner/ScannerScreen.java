@@ -82,7 +82,7 @@ public class ScannerScreen extends AppCompatActivity {
             while ((line = bufferedReader.readLine()) != null) {
 
                 if (line.equals(MD5Code)){
-                    Toast.makeText(ScannerScreen.this, "This file is virus", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(ScannerScreen.this, "This file is virus", Toast.LENGTH_SHORT).show();
                     count = 1;
 
                     intent = new Intent(this, ProgressScreen.class);
@@ -96,7 +96,7 @@ public class ScannerScreen extends AppCompatActivity {
             e.printStackTrace();
         }
         if (count == 0 ){
-            Toast.makeText(ScannerScreen.this, "This file isn't virus", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(ScannerScreen.this, "This file isn't virus", Toast.LENGTH_SHORT).show();
             intent = new Intent(this, Progress2.class);
             intent.putExtra("md5code", MD5Code);
             startActivity(intent);
